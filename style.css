@@ -153,6 +153,27 @@ header {
   margin-right: auto;
 }
 
+/* Large save image shown in header */
+.save-image {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  /* large but constrained on wide screens */
+  height: auto;
+  margin: 1.25rem auto;
+  /* centers horizontally */
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .save-image {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+}
+
 header nav {
   display: flex;
   justify-content: center;
